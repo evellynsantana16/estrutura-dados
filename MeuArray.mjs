@@ -51,3 +51,6 @@ export default class MeuArray {
     // retorna os itens
     verItems = () => this.#items;
 }
+
+
+
