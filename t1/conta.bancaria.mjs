@@ -1,7 +1,9 @@
 export default class contaBancaria {
     #saldo = 0;
 
-    //método para add dinheiro
+    
+
+    //método/funcao para add dinheiro
     depositar(valor) {
         if (valor > 0) {
             this.#saldo += valor;
@@ -11,13 +13,13 @@ export default class contaBancaria {
 
     //metodo pra retira dimdim
     sacar(valor) {
-        if (valor && valor <= this.#saldo) {
+    if (valor > 0 && valor <= this.#saldo) {
             this.#saldo -= valor;
             console.log(`Saque de R$ ${valor} concedido.`);
         }
 
         else {
-            console.log(`Tem grana suficiente n mano...`)
+            console.log(`Sinto muito, saldo insuficiente!`) 
         }
     }
 
