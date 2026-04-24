@@ -18,7 +18,7 @@ const pilha = [];
 pilha.push("A");
 pilha.push("B");
 pilha.push("C");
-pilha.push("E"); //prmeir carta a sair
+pilha.push("E"); //primeira carta a sair
 while (pilha.length > 0) {
     console.log(pilha.pop()); // → mostra o que saiu (LIFO de verdade)
 }
@@ -49,3 +49,4 @@ while (pilha.length > 0) {
 
 // mostra a nova pilha já invertida
 console.log(pilha2);
+

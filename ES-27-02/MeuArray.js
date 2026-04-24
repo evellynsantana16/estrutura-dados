@@ -6,7 +6,6 @@ export default class MeuArray {
     // quantidade de itens
     #tamanho = 0;
 
-    // chamado quando o objeto é criado
     constructor() {
         console.log("MeuArray criado!!!!!");
     }
@@ -24,8 +23,9 @@ export default class MeuArray {
         }
 
         const ultimoItem = this.#items[this.#tamanho - 1];
+
         delete this.#items[this.#tamanho - 1];
-        this.#tamanho--;
+        this.#tamanho--; // corrigido
 
         return ultimoItem;
     }
@@ -39,6 +39,8 @@ export default class MeuArray {
         return this.#items[indice];
     }
 
+   
+
     // limpa o array
     limpar() {
         this.#items = [];
@@ -49,8 +51,29 @@ export default class MeuArray {
     tamanhoArray = () => this.#tamanho;
 
     // retorna os itens
-    verItems = () => this.#items;
+    verItens= () => this.#items;
+
+
+
+ // edita um valor
+    editar(indice, novoValor) {
+        if (indice < 0 || indice >= this.#tamanho) {
+            return;
+        }
+
+        this.#items[indice] = novoValor; // corrigido
+    }
+
+    // procura o índice de um valor
+    obterIndice(valor) {
+        for (let i = 0; i < this.#tamanho; i++) {
+            if (this.#items[i] === valor) { // corrigido
+                return i;
+            }
+        }
+        console.log("Drink Inválido")
+        return null;
+    }
+
 }
-
-
 

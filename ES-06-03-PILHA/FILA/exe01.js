@@ -51,7 +51,7 @@
 
 
 
-const Pilha = require('./pilha.js');
+const Pilha = require('../PILHA/pilha.js');
 
 const feiticos = new Pilha();
 
