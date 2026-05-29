@@ -4,6 +4,8 @@
 // Remover um valor específico da lista.
 // ===============================
 
+import LinkedList from "./lista.js";
+
 const listaA = new LinkedList();
 
 // adiciona valores
@@ -37,7 +39,7 @@ listaB.insertAtEnd("Y");
 let resultado = listaB.find("Y");
 
 // verifica resultado
-if (resultado !== -1) {
+if (resultado) {
     console.log("Valor encontrado na posição:", resultado);
 } else {
     console.log("Valor não encontrado");

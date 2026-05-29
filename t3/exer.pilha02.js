@@ -12,22 +12,24 @@ consegue pegar o último item que colocou.
 
 
 
-const Pilha = require('.pilha.js');
+const Pilha = require('./pilha.js');
 
 const tesouros = new Pilha();
 
-// Tomando como base que o baú já contém alguns tesouros:
-tesouros.adicionar("Colar de Pérolas");
-tesouros.adicionar("Moedas de Ouro");
 
-// Guardar um novo tesouro no baú.
-tesouros.adicionar("Coroa de Diamantes");
+console.log("---------------------------");
 
 // Retirar o último tesouro guardado.
 console.log(tesouros.remover()); // "Coroa de Diamantes" 
 
+console.log("---------------------------");
+
 // Olhar qual é o último tesouro sem pegá-lo
 console.log(tesouros.topo());    // "Moedas de Ouro"
 
+console.log("---------------------------");
+
 // Saber se o baú está vazio.
 console.log(tesouros.estaVazia()); // false
+
+console.log("---------------------------");

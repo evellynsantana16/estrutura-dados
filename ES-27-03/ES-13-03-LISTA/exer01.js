@@ -5,7 +5,7 @@
 // Remover um local perigoso.
 // Verificar se um local ainda existe na trilha.
 // ===============================
-
+import LinkedList from './lista.js';
 const trilha = new LinkedList();
 
 // adiciona no início
@@ -25,6 +25,6 @@ trilha.removeByValue("Caverna");
 console.log("Após remover Caverna:", trilha.toString());
 
 // verifica se "Mirante" existe
-if (trilha.find("Mirante") !== -1) {
+if (trilha.find("Mirante")) {
     console.log("Mirante ainda está na trilha");
 }

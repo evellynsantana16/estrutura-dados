@@ -1,13 +1,10 @@
-/*Você está ajudando um explorador a planejar sua trilha de aventura na
-floresta. Cada ponto da trilha (nó) contém um local interessante, como uma
-cachoeira, uma caverna ou um mirante. O explorador quer começar a trilha
-em um ponto específico e adicionar novos pontos durante a jornada. Sua
-missão é ajudá-lo a:
+/*Simule uma fila de impressão onde diferentes documentos são
+adicionados à fila. Cada documento deve ter um nome e um tamanho em
+páginas. Ao processar a fila, exiba no console qual documento está sendo
+impresso e remova-o da fila após a "impressão".
 
-–/* Inserir pontos da trilha no início e no fim da lista de locais a serem visitados.
-– Depois, o explorador decide remover um local que descobriu ser muito perigoso.
-– Por fim, ele quer verificar se o mirante ainda faz parte da trilha.
-– Implemente uma lista encadeada para representar a trilha e resolva essas tarefas.*/
+• Desafio Extra: Limite a capacidade da fila (ex: 5 documentos) e exiba uma
+mensagem quando a fila estiver cheia.*/
 
 
 // Importa a classe Fila do arquivo Fila.js
