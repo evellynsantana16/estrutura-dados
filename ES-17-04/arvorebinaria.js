@@ -18,7 +18,7 @@ class BinaryTree {
   inserir(valor) {
     const novoNo = new Node(valor);
 
-    // se a árvore estiver vazia
+    // se a árvore estiver vazia 
     if (this.raiz === null) {
       this.raiz = novoNo;
       return;
