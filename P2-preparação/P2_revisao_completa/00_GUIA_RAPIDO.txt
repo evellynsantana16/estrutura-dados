@@ -1,0 +1,69 @@
+GUIA RÁPIDO PARA A PROVA P2 - ESTRUTURAS DE DADOS
+
+COMO IDENTIFICAR A ESTRUTURA PELO ENUNCIADO
+
+1) Ordem de chegada / atendimento / senha / impressão
+=> FILA
+Métodos: enfileirar(), desenfileirar(), frente(), imprimir()
+
+2) Histórico / desfazer / voltar / última ação
+=> PILHA
+Métodos: empilhar(), desempilhar(), topo(), imprimir()
+
+3) Buscar em dados DESORGANIZADOS
+=> BUSCA SEQUENCIAL
+Função: buscaSequencial(vetor, valor)
+
+4) Buscar em dados ORDENADOS
+=> BUSCA BINÁRIA
+Função: buscaBinaria(vetor, valor)
+
+5) Buscar em números ordenados e bem distribuídos
+=> BUSCA POR INTERPOLAÇÃO
+Função: buscaInterpolacao(vetor, valor)
+
+6) Ordenar lista simples
+=> BUBBLE SORT
+Função: bubbleSort(vetor)
+
+7) Ordenar rapidamente usando pivô
+=> QUICK SORT
+Função: quickSort(vetor)
+
+8) Ordenar dividindo e juntando
+=> MERGE SORT
+Função: mergeSort(vetor)
+
+9) Inserir valores mantendo regra menor esquerda / maior direita
+=> ABB
+Classe: ArvoreBinaria
+Métodos: inserir(), buscar(), emOrdem(), retornarEmOrdem(), altura()
+
+10) Inserir valores mantendo balanceamento / FB / altura / rotações
+=> AVL
+Classe: AVLTree
+Métodos: insert(), search(), inOrder(), balanceFactor(), height()
+
+11) Conexões sem peso: cidades, bairros, pessoas, salas
+=> GRAFO
+Classe: Grafo
+Métodos: adicionarAresta(), imprimirGrafo(), buscaEmLargura(), buscaEmProfundidade()
+
+12) Conexões COM peso: distância, tempo, custo, energia
+=> GRAFO PONDERADO
+Classe: GrafoPonderado
+Métodos: adicionarAresta(origem, destino, peso), bfs(), dfs(), dijkstra()
+
+DIFERENÇA QUE MAIS CAI:
+BFS = busca em largura = visita por camadas = usa ideia de FILA.
+DFS = busca em profundidade = vai fundo primeiro = usa ideia de PILHA ou recursão.
+Dijkstra = menor caminho/custo/distância em grafo ponderado.
+
+REGRA SOBRE IMPORT:
+Classe usa new:
+const AVLTree = require('../00_classes/AVLTree');
+const arvore = new AVLTree();
+
+Função NÃO usa new:
+const { buscaSequencial } = require('../00_classes/OrdenacaoEBusca');
+const posicao = buscaSequencial(vetor, valor);
